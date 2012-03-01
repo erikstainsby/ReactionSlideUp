@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		034CDE7914FFE32200193D04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CDE7814FFE32200193D04 /* Cocoa.framework */; };
 		034CDE8314FFE32200193D04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 034CDE8114FFE32200193D04 /* InfoPlist.strings */; };
+		034CDF1214FFE4DD00193D04 /* RSTrixiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CDF1114FFE4DD00193D04 /* RSTrixiePlugin.framework */; };
+		034CDF3414FFE6A000193D04 /* ReactionSlideUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 034CDF3214FFE6A000193D04 /* ReactionSlideUp.m */; };
+		034CDF3514FFE6A000193D04 /* ReactionSlideUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034CDF3314FFE6A000193D04 /* ReactionSlideUp.xib */; };
+		034CDF4B14FFE86F00193D04 /* ReactionSlideUp.h in Headers */ = {isa = PBXBuildFile; fileRef = 034CDF3114FFE6A000193D04 /* ReactionSlideUp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +21,13 @@
 		034CDE7B14FFE32200193D04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		034CDE7C14FFE32200193D04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		034CDE7D14FFE32200193D04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		034CDE8014FFE32200193D04 /* ReactionSlideUp-Info.plist */ = {isa = PBXFileReference; path = "ReactionSlideUp-Info.plist"; sourceTree = "<group>"; };
+		034CDE8014FFE32200193D04 /* ReactionSlideUp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactionSlideUp-Info.plist"; sourceTree = "<group>"; };
 		034CDE8214FFE32200193D04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		034CDE8414FFE32200193D04 /* ReactionSlideUp-Prefix.pch */ = {isa = PBXFileReference; path = "ReactionSlideUp-Prefix.pch"; sourceTree = "<group>"; };
+		034CDE8414FFE32200193D04 /* ReactionSlideUp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactionSlideUp-Prefix.pch"; sourceTree = "<group>"; };
+		034CDF1114FFE4DD00193D04 /* RSTrixiePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixiePlugin.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug/RSTrixiePlugin.framework"; sourceTree = "<group>"; };
+		034CDF3114FFE6A000193D04 /* ReactionSlideUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactionSlideUp.h; sourceTree = "<group>"; };
+		034CDF3214FFE6A000193D04 /* ReactionSlideUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactionSlideUp.m; sourceTree = "<group>"; };
+		034CDF3314FFE6A000193D04 /* ReactionSlideUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactionSlideUp.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034CDF1214FFE4DD00193D04 /* RSTrixiePlugin.framework in Frameworks */,
 				034CDE7914FFE32200193D04 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +63,7 @@
 		034CDE7714FFE32200193D04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				034CDF1114FFE4DD00193D04 /* RSTrixiePlugin.framework */,
 				034CDE7814FFE32200193D04 /* Cocoa.framework */,
 				034CDE7A14FFE32200193D04 /* Other Frameworks */,
 			);
@@ -74,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				034CDE7F14FFE32200193D04 /* Supporting Files */,
+				034CDF3114FFE6A000193D04 /* ReactionSlideUp.h */,
+				034CDF3214FFE6A000193D04 /* ReactionSlideUp.m */,
+				034CDF3314FFE6A000193D04 /* ReactionSlideUp.xib */,
 			);
 			path = ReactionSlideUp;
 			sourceTree = "<group>";
@@ -90,6 +103,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		034CDF4A14FFE86A00193D04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034CDF4B14FFE86F00193D04 /* ReactionSlideUp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		034CDE7414FFE32200193D04 /* ReactionSlideUp */ = {
 			isa = PBXNativeTarget;
@@ -98,6 +122,7 @@
 				034CDE7114FFE32200193D04 /* Sources */,
 				034CDE7214FFE32200193D04 /* Frameworks */,
 				034CDE7314FFE32200193D04 /* Resources */,
+				034CDF4A14FFE86A00193D04 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -140,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				034CDE8314FFE32200193D04 /* InfoPlist.strings in Resources */,
+				034CDF3514FFE6A000193D04 /* ReactionSlideUp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034CDF3414FFE6A000193D04 /* ReactionSlideUp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +244,15 @@
 		034CDE8814FFE32200193D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactionSlideUp/ReactionSlideUp-Prefix.pch";
 				INFOPLIST_FILE = "ReactionSlideUp/ReactionSlideUp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,10 +261,15 @@
 		034CDE8914FFE32200193D04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactionSlideUp/ReactionSlideUp-Prefix.pch";
 				INFOPLIST_FILE = "ReactionSlideUp/ReactionSlideUp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
